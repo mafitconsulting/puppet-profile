@@ -1,0 +1,15 @@
+{
+  "name": "mafitconsulting-profiles",
+  "version": "0.1.0",
+  "author": "mafitconsulting",
+  "summary": "Puppet profiles",
+  "license": "Apache-2.0",
+  "source": "https://github.com/mafitconsulting/puppet-profile.git",
+  "project_page": "https://github.com/mafitconsulting/puppet-profile",
+  "issues_url": "https://github.com/mafitconsulting/puppet-profile.git",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
