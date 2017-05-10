@@ -1,3 +1,3 @@
 class profile::tivolilfa {
-  include ::tivolilfa,
+  include ::tivolilfa
 }

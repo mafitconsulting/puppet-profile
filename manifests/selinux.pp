@@ -1,3 +1,8 @@
-class profile::selinux {
-  include ::selinux
+class profile::selinux (
+  String $mode  = 'permissive',
+) {
+  class { '::selinux':
+    mode => $mode,
+  }
 }
+  
