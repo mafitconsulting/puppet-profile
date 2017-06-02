@@ -15,4 +15,9 @@ class profile::apache(
   #  before  => File["${docroot}/index.html"],
   #}
 
+  file { "${docroot}/index.html":
+    ensure  => file,
+    content => 'This is a webpage for mafitconsulting',
+  }
+
 }
