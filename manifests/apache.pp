@@ -15,7 +15,4 @@ class profile::apache(
   #  before  => File["${docroot}/index.html"],
   #}
 
-  file { "${docroot}/index.html":
-    content => "This is a test page",
-  }
 }
