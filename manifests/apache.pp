@@ -1,6 +1,7 @@
 class profile::apache(
   Boolean $default_vhost = false,
   Hash $apache_vhost_servers,
+  String $docroot,
   #Integer $port          = 80,
   #String $docroot        = '/var/www/test',
 ) {
