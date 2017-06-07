@@ -1,7 +1,7 @@
 class profile::apache(
   Boolean $default_vhost = false,
   Hash $apache_vhost_servers,
-  String $docroot,
+  Hash $create_index_file,
   #Integer $port          = 80,
   #String $docroot        = '/var/www/test',
 ) {
@@ -16,9 +16,6 @@ class profile::apache(
   #  before  => File["${docroot}/index.html"],
   #}
 
-  file { "${docroot}/index.html":
-    ensure  => file,
-    content => 'This is a webpage for mafitconsulting',
-  }
+  create_resources(::webdev::index_page, $create_index_file)
 
 }
