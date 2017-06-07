@@ -9,6 +9,8 @@ class profile::apache(
     default_vhost => $default_vhost,
   }
 
+  class { '::webdev':}
+
   create_resources(::apache::vhost, $apache_vhost_servers)
   #::apache::vhost { 'fieldhouse2.mylabserver.com':
   #  port    => $port,
