@@ -1,5 +1,5 @@
 class profile::webpage(
-  Array $create_index_file,
+  Hash $create_index_file,
 ) {
   class { '::webdev':}
 
