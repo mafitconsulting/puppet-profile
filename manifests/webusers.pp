@@ -1,7 +1,7 @@
 class profile::webusers(
   Hash $create_users
 ) {
-  include { '::webdev':}
+  include webdev
 
   $defaults = {
     ensure   => present,
